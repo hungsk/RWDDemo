@@ -1,0 +1,275 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* CSS Reset End */
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+img{
+    vertical-align: middle;
+}
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-media {
+    display: flex;
+    justify-content: flex-end;
+    background: #f6f6f6;
+    padding: 0 10px;
+}
+
+.social-media a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.social-media a:hover {
+    opacity: 0.5;
+}
+
+.fa-brands {
+    margin-right: 5px;
+}
+
+.facebook {
+    color: #4460a0;
+    border-right: 1px solid #bebebe;
+}
+
+.twitter {
+    color: #00aaec;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 4px 0 #bebebe;
+    margin-bottom: 30px;
+}
+
+.logo a {
+    display: block;
+    width: 170px;
+    height: 36px;
+    background-image: url("../images/logo.png");
+    text-indent: -99999px;
+    /* text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden; */
+}
+
+.menu {
+    display: flex;
+    margin-right: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #0c9;
+    border-bottom: 5px solid transparent;
+}
+
+.menu li a:hover {
+    border-bottom: 5px solid #00cc99;
+}
+
+.courses {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.courses>li {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    box-shadow: 0 5px 5px 0 #bebebe;
+    padding: 20px;
+}
+
+.courses li img {
+    max-width: 100%;
+}
+
+.courses li h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.courses li p,
+.list-in-list {
+    line-height: 1.5;
+    align-self: start;
+}
+
+.list-in-list {
+    list-style-type: disc;
+    margin-left: 22px;
+}
+
+@media(max-width: 992px) {
+    .social-media {
+        justify-content: center;
+    }
+}
+
+@media(max-width: 767px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 992px) {
+    .courses li {
+        width: 48%;
+    }
+}
+
+@media(max-width: 767px) {
+    .courses li {
+        width: 90%;
+    }
+}
